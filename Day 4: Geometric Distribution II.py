@@ -1,6 +1,6 @@
-def geometric_distributon(n, p):
-    return ((1-p)**(n-1))*p
+p=1/3
 
-a, b = list(map(int, input().split()))
-n = int(input())
-print('{:.3f}'.format(geometric_distributon(n, a/b)))
+def geomprob(k,p):
+    return p*(1-p)**(k-1)
+
+print("{0:.3f}".format(sum([geomprob(k,p) for k in range(1,6)])))
