@@ -1,7 +1,6 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
 # Input from stdin
-
 averageX, averageY = [float(num) for num in input().split(" ")]
 
 # Cost
